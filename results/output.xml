@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-01-22T09:16:35.406361" rpa="false" schemaversion="5">
+<suite id="s1" name="Universal Viewer Test" source="C:\Users\LOkorodudu_88\PycharmProjects\RobotFramework\UniversalViewerTestSuites\UVend2endTest\suites\universal_viewer_test.robot">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:16:35.808264" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:16:35.808065" elapsed="5.552084"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:16:41.360577" elapsed="0.048356"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:16:46.411101" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:16:41.409756" elapsed="5.001702"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:16:35.807465" elapsed="10.604327"/>
+</kw>
+<test id="s1-t1" name="Universal Viewer Page" line="10">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:16:46.415997" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:16:46.415426" elapsed="3.109149"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:16:49.524840" elapsed="0.194911"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:16:54.720938" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:16:49.720033" elapsed="5.001232"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:16:46.414388" elapsed="8.307236"/>
+</kw>
+<kw name="Load And View Manifest" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:16:54.726637" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:16:54.726177" elapsed="3.110121"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:16:57.836574" elapsed="0.175931"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SET_MANIFEST_ID}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:16:58.013046" elapsed="0.220363"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SET_MANIFEST_ID}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T09:16:58.233651" elapsed="0.351843"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:16:59.586651" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:16:58.585698" elapsed="1.001266"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:16:59.588227" level="INFO">Typing text 'https://wellcomelibrary.org/iiif/b18035978/manifest' into text field 'xpath://*[@id="iiifManifestId"]'.</msg>
+<arg>${MANIFEST_INPUT}</arg>
+<arg>${manifest_url}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:16:59.587501" elapsed="0.216303"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:16:59.804760" level="INFO">Clicking button 'xpath://*[@id="setIIIFManifestIdButton"]'.</msg>
+<arg>${SET_MANIFEST_ID}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:16:59.804276" elapsed="0.077746"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:02.882834" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:16:59.882342" elapsed="3.000647"/>
+</kw>
+<arg>${MANIFEST_URL}</arg>
+<status status="PASS" start="2025-01-22T09:16:54.725404" elapsed="8.157726"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:16:46.412187" elapsed="16.471757"/>
+</test>
+<test id="s1-t2" name="Test Next AnD Previous Navigation" line="14">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:02.888101" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:17:02.887729" elapsed="2.986206"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:17:05.874451" elapsed="0.063352"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:10.938828" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:05.938125" elapsed="5.001062"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:17:02.886989" elapsed="8.052471"/>
+</kw>
+<kw name="Navigate Next" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:17:10.941336" elapsed="0.009357"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:10.951384" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="uv"]/div/div/div[2]/div[1]'.</msg>
+<arg>${IMAGE_CONTAINER}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:10.950986" elapsed="0.309701"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:12.261877" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:11.261100" elapsed="1.001028"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NEXT_BUTTON}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:17:12.262537" elapsed="0.037738"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:12.301045" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Next Image"]'.</msg>
+<arg>${NEXT_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:12.300604" elapsed="0.305064"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:12.606539" level="INFO">Clicking element 'xpath://*[@title="Next Image"]'.</msg>
+<arg>${NEXT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:12.606077" elapsed="0.102853"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:22.710345" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:12.709355" elapsed="10.001172"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:17:10.940649" elapsed="11.770049"/>
+</kw>
+<kw name="Navigate Previous" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:17:22.712392" elapsed="0.007801"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:22.720878" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="uv"]/div/div/div[2]/div[1]'.</msg>
+<arg>${IMAGE_CONTAINER}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:22.720497" elapsed="0.290433"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:24.012252" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:23.011302" elapsed="1.001239"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PREVIOUS_BUTTON}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:17:24.012983" elapsed="0.035668"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:24.049442" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Previous Image"]'.</msg>
+<arg>${PREVIOUS_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:24.049051" elapsed="0.299710"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:24.349809" level="INFO">Clicking element 'xpath://*[@title="Previous Image"]'.</msg>
+<arg>${PREVIOUS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:24.349243" elapsed="0.108611"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:34.458663" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:24.458113" elapsed="10.000900"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:17:22.711581" elapsed="11.747725"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:17:02.885699" elapsed="31.574424"/>
+</test>
+<test id="s1-t3" name="Test Jump To Next Page" line="19">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:34.466336" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:17:34.464910" elapsed="2.950388"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:17:37.415857" elapsed="0.072349"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:42.489332" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:37.488580" elapsed="5.001022"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:17:34.463789" elapsed="8.026257"/>
+</kw>
+<kw name="Jump To Page" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:17:42.492372" elapsed="0.007737"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PAGE_INPUT}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:17:42.500503" elapsed="0.035098"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:42.536134" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="uv"]/div/div/div[1]/div[1]/div[1]/div[3]/input[2]'.</msg>
+<arg>${PAGE_INPUT}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:42.535849" elapsed="0.291527"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:42.828340" level="INFO">Typing text '5' into text field 'xpath://*[@id="uv"]/div/div/div[1]/div[1]/div[1]/div[3]/input[2]'.</msg>
+<arg>${PAGE_INPUT}</arg>
+<arg>${page_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:42.827795" elapsed="0.176747"/>
+</kw>
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${GO_BUTTON}</arg>
+<arg>\\13</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:43.004895" elapsed="0.088245"/>
+</kw>
+<arg>5</arg>
+<status status="PASS" start="2025-01-22T09:17:42.491397" elapsed="0.602000"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:17:34.462168" elapsed="8.631636"/>
+</test>
+<test id="s1-t4" name="Test Thumbnails" line="23">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:43.097887" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:17:43.096798" elapsed="3.144876"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:17:46.242173" elapsed="0.062241"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:17:51.305759" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:46.304680" elapsed="5.001416"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:17:43.095224" elapsed="8.211195"/>
+</kw>
+<kw name="Click Thumbnail" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:17:51.308487" elapsed="0.010619"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${THUMBNAILS}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:17:51.319486" elapsed="0.030970"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:17:51.350891" level="INFO">Clicking element 'xpath://*[@id="uv"]/div/div/div[2]/div[2]/div[3]/div[1]/a[2]'.</msg>
+<arg>${THUMBNAILS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:17:51.350662" elapsed="0.108369"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:01.459998" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:17:51.459314" elapsed="10.000991"/>
+</kw>
+<arg>2</arg>
+<status status="PASS" start="2025-01-22T09:17:51.307752" elapsed="10.152836"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:17:43.094609" elapsed="18.367130"/>
+</test>
+<test id="s1-t5" name="Test Search Functionality" line="27">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:01.467500" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:18:01.466875" elapsed="3.104094"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:18:04.571533" elapsed="0.060649"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:09.635924" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:04.633772" elapsed="5.002924"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:18:01.465662" elapsed="8.171537"/>
+</kw>
+<kw name="Search Item" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:18:09.639247" elapsed="0.009158"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_TEXT}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:18:09.648690" elapsed="0.030788"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:09.679816" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="searchWithinInput"]'.</msg>
+<arg>${SEARCH_TEXT}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:09.679619" elapsed="0.280178"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:09.960932" level="INFO">Typing text 'biomedicine' into text field 'xpath://*[@id="searchWithinInput"]'.</msg>
+<arg>${SEARCH_TEXT}</arg>
+<arg>${ENTER_KEYWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:09.960263" elapsed="0.199462"/>
+</kw>
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${SEARCH_TEXT}</arg>
+<arg>\\13</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:10.159906" elapsed="0.084819"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:20.245400" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:10.244887" elapsed="10.000752"/>
+</kw>
+<arg>${ENTER_KEYWORD}</arg>
+<status status="PASS" start="2025-01-22T09:18:09.638379" elapsed="10.607558"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:18:01.464067" elapsed="18.782841"/>
+</test>
+<test id="s1-t6" name="Test Zoom In" line="31">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:20.252769" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:18:20.252118" elapsed="3.102731"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:18:23.355189" elapsed="0.072607"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:28.428891" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:23.428097" elapsed="5.000963"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:18:20.251313" elapsed="8.177907"/>
+</kw>
+<kw name="Zoom In" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:18:28.430640" elapsed="0.005595"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:28.436680" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="uv"]/div/div/div[2]/div[1]'.</msg>
+<arg>${IMAGE_CONTAINER}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:28.436452" elapsed="0.312423"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:29.750275" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:28.749361" elapsed="1.001182"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ZOOM_IN_BUTTON}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:18:29.751116" elapsed="0.051110"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:29.802943" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Zoom In"]'.</msg>
+<arg>${ZOOM_IN_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:29.802535" elapsed="0.344582"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:30.148489" level="INFO">Clicking element 'xpath://*[@title="Zoom In"]'.</msg>
+<arg>${ZOOM_IN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:30.147686" elapsed="0.116354"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:40.265548" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:30.264530" elapsed="10.001272"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:18:28.430055" elapsed="11.836046"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:18:20.250031" elapsed="20.016820"/>
+</test>
+<test id="s1-t7" name="Test Zoom Out" line="35">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:40.271319" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:18:40.270837" elapsed="3.325073"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:18:43.596480" elapsed="0.233229"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:48.831324" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:43.830073" elapsed="5.001567"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:18:40.269910" elapsed="8.562038"/>
+</kw>
+<kw name="Zoom Out" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:18:48.833989" elapsed="0.010183"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:48.845556" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="uv"]/div/div/div[2]/div[1]'.</msg>
+<arg>${IMAGE_CONTAINER}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:48.844726" elapsed="0.313693"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:18:50.159760" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:49.158865" elapsed="1.001091"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ZOOM_OUT_BUTTON}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:18:50.160277" elapsed="0.042987"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:50.203860" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Zoom Out"]'.</msg>
+<arg>${ZOOM_OUT_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:50.203501" elapsed="0.303971"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:18:50.508318" level="INFO">Clicking element 'xpath://*[@title="Zoom Out"]'.</msg>
+<arg>${ZOOM_OUT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:18:50.507867" elapsed="0.103237"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:00.612334" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:18:50.611411" elapsed="10.001257"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:18:48.833323" elapsed="11.779708"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:18:40.268686" elapsed="20.345386"/>
+</test>
+<test id="s1-t8" name="Test Rotate Image" line="39">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:00.620058" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:19:00.619671" elapsed="3.106401"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:19:03.726384" elapsed="0.085715"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:08.813580" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:19:03.812393" elapsed="5.001545"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:19:00.618154" elapsed="8.196144"/>
+</kw>
+<kw name="Rotate Image" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:19:08.816115" elapsed="0.006289"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:08.822816" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="uv"]/div/div/div[2]/div[1]'.</msg>
+<arg>${IMAGE_CONTAINER}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:19:08.822583" elapsed="0.310460"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:10.134597" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:19:09.133564" elapsed="1.001320"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ROTATE_RIGHT_BUTTON}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:19:10.135341" elapsed="0.040331"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:10.176106" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Rotate Right"]'.</msg>
+<arg>${ROTATE_RIGHT_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:19:10.175890" elapsed="0.282651"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:10.459349" level="INFO">Clicking element 'xpath://*[@title="Rotate Right"]'.</msg>
+<arg>${ROTATE_RIGHT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:19:10.458927" elapsed="0.101190"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:20.560895" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:19:10.560318" elapsed="10.000831"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:19:08.815493" elapsed="11.745928"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:19:00.617228" elapsed="19.945134"/>
+</test>
+<test id="s1-t9" name="Test View Modes" line="47">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:20.567734" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:19:20.567277" elapsed="3.581013"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:19:24.148662" elapsed="0.201831"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:29.351992" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:19:24.350873" elapsed="5.001432"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:19:20.566244" elapsed="8.786391"/>
+</kw>
+<kw name="Toggle View Mode" owner="universal_viewer_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${VIEW_MODE_TOGGLE}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:19:29.356639" elapsed="0.037246"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:29.394384" level="INFO">Clicking element 'xpath://*[@id="uv"]/div/div/div[1]/div[1]/div[2]/div/button[1]/i'.</msg>
+<arg>${VIEW_MODE_TOGGLE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:19:29.394124" elapsed="0.082543"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:39.477307" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:19:29.476811" elapsed="10.000737"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:19:29.356009" elapsed="10.121854"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:19:20.565023" elapsed="18.913551"/>
+</test>
+<test id="s1-t10" name="Test Downloading" line="51">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:39.481597" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:19:39.481377" elapsed="3.525898"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:19:43.007645" elapsed="0.196056"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:48.204637" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:19:43.203955" elapsed="5.000970"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:19:39.480919" elapsed="8.724310"/>
+</kw>
+<kw name="Download Content" owner="universal_viewer_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DOWNLOAD_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:19:48.207168" elapsed="0.052186"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:48.259661" level="INFO">Clicking element 'xpath://*[@id="download-btn"]/i'.</msg>
+<arg>${DOWNLOAD_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:19:48.259497" elapsed="0.105301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:19:58.366839" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:19:48.365138" elapsed="10.002376"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:19:48.206357" elapsed="10.161425"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:19:39.480114" elapsed="18.888399"/>
+</test>
+<test id="s1-t11" name="Test Sharing" line="55">
+<kw name="Open Universal Viewer Page" owner="universal_viewer_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:19:58.372336" level="INFO">Opening browser 'chrome' to base url 'https://universalviewer-git-fork-falveylibrarytechnol-2d56e2-bl-uv-team.vercel.app/#?xywh=-2361%2C-339%2C7289%2C4219'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T09:19:58.371936" elapsed="3.946054"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:20:02.318315" elapsed="0.232340"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:07.551872" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:02.551089" elapsed="5.000919"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-01-22T09:19:58.371161" elapsed="9.180954"/>
+</kw>
+<kw name="Share Content" owner="universal_viewer_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SHARE_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:07.552875" elapsed="0.042382"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:07.595598" level="INFO">Clicking element 'xpath://*[@title="Share"]'.</msg>
+<arg>${SHARE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:07.595406" elapsed="0.067264"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:17.663489" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:07.662814" elapsed="10.000952"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:07.552604" elapsed="10.111422"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:19:58.370002" elapsed="19.294953"/>
+</test>
+<test id="s1-t12" name="Test Change Locale" line="59">
+<kw name="Open Settings and Change Locale" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:20:17.666864" elapsed="0.008056"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SETTINGS_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:17.675158" elapsed="0.023853"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SETTINGS_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T09:20:17.699153" elapsed="0.275638"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:17.975875" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Settings"]'.</msg>
+<arg>${SETTINGS_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:17.975269" elapsed="0.312812"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:18.289976" level="INFO">Executing JavaScript:
+document.querySelector(".overlays").style.display = "none"
+Without any arguments.</msg>
+<arg>document.querySelector(".overlays").style.display = "none"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-22T09:20:18.288823" elapsed="0.020527"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:18.309937" level="INFO">Clicking element 'xpath://*[@title="Settings"]'.</msg>
+<arg>${SETTINGS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:18.309607" elapsed="0.133499"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SETTINGS_LOCALE}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:18.443296" elapsed="0.053764"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:18.497481" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="locale"]'.</msg>
+<arg>${SETTINGS_LOCALE}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:18.497297" elapsed="0.323418"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:18.822333" level="INFO">Selecting options from selection list 'xpath://*[@id="locale"]' by value en-GB.</msg>
+<arg>${SETTINGS_LOCALE}</arg>
+<arg>${LANGUAGE}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-01-22T09:20:18.821329" elapsed="0.121072"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:20.943649" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:18.942605" elapsed="2.001369"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:20.945498" level="INFO">Clicking element 'xpath://*[@id="uv"]/div/div/div[5]/div[12]/div[2]/div[2]/button'.</msg>
+<arg>${CLOSE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:20.944568" elapsed="0.085208"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:17.666554" elapsed="3.363353"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:17.665974" elapsed="3.364500"/>
+</test>
+<test id="s1-t13" name="Test Toggle Reduced Motion" line="62">
+<kw name="Toggle Reduced Motion" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.032295" elapsed="0.007584"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SETTINGS_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.040219" elapsed="0.024470"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SETTINGS_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.064914" elapsed="0.306208"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:21.372175" level="INFO">Executing JavaScript:
+document.querySelector(".overlays").style.display = "none"
+Without any arguments.</msg>
+<arg>document.querySelector(".overlays").style.display = "none"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.371574" elapsed="0.006478"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:21.378510" level="INFO">Clicking element 'xpath://*[@title="Settings"]'.</msg>
+<arg>${SETTINGS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.378266" elapsed="0.082457"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REDUCEMOTION}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.461159" elapsed="0.026890"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${REDUCEMOTION}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.488297" elapsed="0.290307"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:21.803053" level="INFO">${is_checked} = None</msg>
+<var>${is_checked}</var>
+<arg>${REDUCEMOTION}</arg>
+<arg>checked</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.779137" elapsed="0.023965"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:21.803724" level="INFO">Clicking element 'xpath://*[@id="reducedAnimation"]'.</msg>
+<arg>${REDUCEMOTION}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.803573" elapsed="0.126524"/>
+</kw>
+<arg>'${is_checked}' != 'true'</arg>
+<arg>Click Element</arg>
+<arg>${REDUCEMOTION}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.803303" elapsed="0.127016"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:23.931052" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:21.930484" elapsed="2.000834"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:23.933366" level="INFO">Clicking element 'xpath://*[@id="uv"]/div/div/div[5]/div[12]/div[2]/div[2]/button'.</msg>
+<arg>${CLOSE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:23.931677" elapsed="0.073258"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:29.005618" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:24.005092" elapsed="5.000773"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:21.031982" elapsed="7.974147"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:21.031352" elapsed="7.975574"/>
+</test>
+<test id="s1-t14" name="Test Toggle Navigator" line="65">
+<kw name="Toggle Navigator" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.011217" elapsed="0.011236"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SETTINGS_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.022847" elapsed="0.053742"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SETTINGS_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.076922" elapsed="0.306799"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:29.385229" level="INFO">Executing JavaScript:
+document.querySelector(".overlays").style.display = "none"
+Without any arguments.</msg>
+<arg>document.querySelector(".overlays").style.display = "none"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.384206" elapsed="0.009903"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:29.394538" level="INFO">Clicking element 'xpath://*[@title="Settings"]'.</msg>
+<arg>${SETTINGS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.394309" elapsed="0.075500"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NAVIGATOR_ENABLED}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.469965" elapsed="0.021312"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${NAVIGATOR_ENABLED}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.491418" elapsed="0.296513"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:29.817818" level="INFO">${is_checked} = true</msg>
+<var>${is_checked}</var>
+<arg>${NAVIGATOR_ENABLED}</arg>
+<arg>checked</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.788434" elapsed="0.029461"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${is_checked}' != 'true'</arg>
+<arg>Click Element</arg>
+<arg>${NAVIGATOR_ENABLED}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.818162" elapsed="0.000244"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:31.819184" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:29.818607" elapsed="2.000816"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:31.820303" level="INFO">Clicking element 'xpath://*[@id="uv"]/div/div/div[5]/div[12]/div[2]/div[2]/button'.</msg>
+<arg>${CLOSE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:31.819788" elapsed="0.088680"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:36.909662" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:31.908673" elapsed="5.001313"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:29.010448" elapsed="7.899858"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:29.008861" elapsed="7.904723"/>
+</test>
+<test id="s1-t15" name="Test Expand More Information" line="68">
+<kw name="Expand More Information" owner="universal_viewer_page">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T09:20:36.918665" elapsed="0.012097"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EXPAND_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:36.931498" elapsed="0.035151"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:36.967186" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Expand Information"]'.</msg>
+<arg>${EXPAND_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:36.966984" elapsed="0.291680"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:37.259620" level="INFO">Clicking element 'xpath://*[@title="Expand Information"]'.</msg>
+<arg>${EXPAND_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:37.259096" elapsed="0.143107"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:42.404518" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:37.402719" elapsed="5.002109"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:36.917637" elapsed="5.487398"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:36.916159" elapsed="5.489523"/>
+</test>
+<test id="s1-t16" name="Test Toggle Fullscreen Mode" line="71">
+<kw name="Toggle Fullscreen Mode" owner="universal_viewer_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FULLSCREEN_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T09:20:42.410875" elapsed="0.025079"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:42.436259" level="INFO">Simulating Mouse Over on element 'xpath://*[@title="Full Screen"]'.</msg>
+<arg>${FULLSCREEN_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:42.436098" elapsed="0.283901"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T09:20:42.721277" level="INFO">Clicking element 'xpath://*[@title="Full Screen"]'.</msg>
+<arg>${FULLSCREEN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T09:20:42.720628" elapsed="0.394477"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T09:20:48.116571" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T09:20:43.115409" elapsed="5.001435"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:42.407921" elapsed="5.709215"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:42.406981" elapsed="5.710935"/>
+</test>
+<kw name="Close Universal Viewer Page" owner="universal_viewer_page" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-22T09:20:48.121198" elapsed="2.672086"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:20:48.120718" elapsed="2.672939"/>
+</kw>
+<status status="PASS" start="2025-01-22T09:16:35.407355" elapsed="255.386452"/>
+</suite>
+<statistics>
+<total>
+<stat pass="16" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="16" fail="0" skip="0" id="s1" name="Universal Viewer Test">Universal Viewer Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
