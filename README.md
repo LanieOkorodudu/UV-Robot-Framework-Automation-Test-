@@ -56,12 +56,12 @@ UVend2endTest/
    * **Search for Keywords**: Test the search functionality by entering specific keywords to locate items. This can be negative or positive testing.
    
    **Viewing Features**
-   * **Load and View Manifest**: Load nd display manifest using the provided URL.
+   * **Load and View Manifest**: Load and display manifest using the provided URL.
    * **Thumbnails**: Click on Thumbnails to view specific content.
 
    **Image Controls**
    * **Zoom In/Zoom out**: Test zoom functionality to adjust image sizes.
-   * **Rotate Image: Verify image rotation capabilities.
+   * **Rotate Image**: Verify image rotation capabilities.
 
    **Settings and Preferences**
    * **Change Locale**: Change the language settings through the Settings menu.
